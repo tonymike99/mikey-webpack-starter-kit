@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "description": "A simple and lightweight foundation for building a webpack based single-page application (SPA).",
   "main": "index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": "> 0.25%, not dead",
   "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
